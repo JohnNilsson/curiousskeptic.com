@@ -22,7 +22,7 @@ In Scala we can encode this as
 class Monoid[T](id: T, op: (T, T) => T)
 ```
 
-Typical monoids most of us are familiar with are addition and multiplication with their respective identity $(\mathbb{R},+,0)$ and $(\mathbb{R},\times,1)$. These examples happens to also be commutative but this is not a requirement for monads. As an example of a non-commutative monad consider string concatenation.
+Typical monoids most of us are familiar with are addition and multiplication with their respective identity $(\mathbb{R},+,0)$ and $(\mathbb{R},\times,1)$. These examples happens to also be commutative but this is not a requirement for monoids. As an example of a non-commutative monoid consider string concatenation.
 
 The reason we think these are interesting properties is because it makes life easier for us in various ways. The fact that the operation is closed over the set means that no matter how we combine objects using this operator we will always end up with an object that can be further combined. This is tremendously helpful in all types of applications where composition is useful, for example in programming.
 
